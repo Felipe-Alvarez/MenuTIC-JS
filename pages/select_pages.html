@@ -1,0 +1,115 @@
+<!-- 
+    Document   : select_pages
+    Created on : 5/08/2021, 5:00:18 p. m.
+    Author     : @user
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MenuTIC</title>
+    <!-- Bootstrap core CSS-->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <!-- SWEETALERT -->
+    <link rel="stylesheet" href="/css/sweetalert.css" type="text/css" />
+    <script src="/js/sweetalert.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container" class="container-fluid">
+        <div id="col" class="col-12 align-content-center">
+            <!-- ROW-LOGO -->
+            <div id="row-logo" class="row justify-content-center align-content-center">
+                <div>
+                    <img class="img-fluid" src="/images/logo pjic.png" alt="Image responsive" />
+                </div>
+            </div>
+            <!-- Acá inicia la zona de los tres botones -->
+            <div class="row-fluid justify-content-center d-flex">
+                <!-- Botón para el usuario ingresar a solicitar el menú -->
+                <div id="body-button" class="col-lg-4 col-xs-12 row align-content-center justify-content-center">
+                    <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                        href="user_menu_food.html" id="button-interactive">
+                        Ordenar pedido
+                        <img class="icon" src="/sgv/shop-window.svg" alt="sgv" />
+                    </a>
+                </div>
+            </div>
+            <div class="row-fluid col-12 justify-content-center d-flex">
+                <!-- Cotón para la empresa agregar su menú -->
+                <div id="body-button" class="col-lg-4 col-xs-12 row align-content-center justify-content-center">
+                    <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75" href="#"
+                        id="button-interactive">
+                        Crear menú
+                        <img class="icon" src="/sgv/plus-circle.svg" alt="sgv" />
+                    </a>
+                </div>
+            </div>
+            <!-- Botón para salir -->
+            <div class="row-fluid justify-content-center d-flex">
+                <div id="body-button" class="col-lg-4 col-xs-12 row align-content-center justify-content-center">
+                    <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                        href="index.html" id="button-interactive"
+                        onclick="return confirm('¿Estás seguro de cerrar sesión?')">
+                        Regresar
+                        <img class="icon" src="/sgv/arrow-left-short.svg" alt="sgv" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*Zona de estilos CSS*/
+        #container {
+            height: 100vh;
+        }
+
+        #col {
+            height: 100%;
+        }
+
+        .icon {
+            height: 4vh;
+        }
+
+        #row-logo {
+            height: 25vh;
+        }
+
+        #col {
+            background-color: #fff3cd;
+        }
+
+        .btn {
+            font-family: verdana;
+            background: orange;
+            height: 7vh;
+            align-items: center;
+        }
+
+        #body-button {
+            height: 25vh;
+        }
+
+        #button-interactive:hover {
+            background-color: rgba(255, 166, 0, 0.678);
+        }
+
+    </style>
+    <!-- Bootstrap core JavaScript-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
