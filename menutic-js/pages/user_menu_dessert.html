@@ -29,7 +29,7 @@
 
 <body>
     <!--NAVEGATION-NAVBAR-->
-    <nav class="navbar navbar-expand-md sticky-bottom row-fluid d-flex justify-content-around col-12 p-0" id="mainNav">
+    <nav class="navbar navbar-expand-md fixed-bottom row-fluid d-flex justify-content-around col-12 p-0" id="mainNav">
         <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_food.html" title="Comidas">
             <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
         </a>
@@ -51,7 +51,7 @@
         </a>
     </nav>
     <!-- BODDY-ROW -->
-    <div id="container" class="container-fluid align-content-center">
+    <div id="container" class="container-fluid align-content-center bg-light">
         <div id="container2" class="container-fluid bg-light">
             <ul class="m-0" style="visibility: hidden;">
                 <li>hidden</li>
@@ -147,13 +147,8 @@
             font-size: 2em;
         }
 
-        #nav_item_a:hover {
-            background-color: #d9534f;
-        }
-
         #container {
             height: auto;
-            background: #ffcc66
         }
 
         #nav-alter {
@@ -186,6 +181,9 @@
         @media(min-width: 992px) {
             #nav_item_a:hover {
                 background-color: #f1eeee;
+            }
+            #mainNav{
+                position: fixed;
             }
         }
     </style>
