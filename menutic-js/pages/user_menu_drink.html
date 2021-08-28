@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Crear cuenta | MenuTIC</title>
+    <title>Bebidas | MenuTIC</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -22,34 +22,32 @@
     <!-- SWEETALERT -->
     <link rel="stylesheet" href="css/sweetalert.css" type="text/css" />
     <script src="js/sweetalert.min.js" type="text/javascript"></script>
+    <!--FUNCTIONS-->
+    <script src="js/positivos.js"></script>
 </head>
 
 <body>
     <!--NAVEGATION-NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
-        <div id="nav-alter" class="row-fluid d-flex justify-content-around col-12">
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_food.html"
-                title="Comidas">
-                <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_drink.html">
-                <img src="sgv/botella-de-plastico.svg" alt="alt" style="height: 2em; width: 2em" title="Bebidas" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_dessert.html">
-                <img src="sgv/pastel.svg" alt="alt" style="height: 2em; width: 2em" data-title="Postres" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_kids.html">
-                <img src="sgv/bebe.svg" alt="alt" style="height: 2em; width: 2em" title="Menú Infantil" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_pedidos.html"
-                title="Pedidos">
-                <img src="sgv/scroll.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="select_pages.html"
-                onclick="return confirm('¿Estás seguro de cerrar sesión?')" title="Salir">
-                <img src="sgv/salida.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-        </div>
+    <nav class="navbar navbar-expand-md sticky-bottom row-fluid d-flex justify-content-around col-12 p-0" id="mainNav">
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_food.html" title="Comidas">
+            <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2 bg-light" href="user_menu_drink.html">
+            <img src="sgv/botella-de-plastico.svg" alt="alt" style="height: 2em; width: 2em" title="Bebidas" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_dessert.html">
+            <img src="sgv/pastel.svg" alt="alt" style="height: 2em; width: 2em" data-title="Postres" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_kids.html">
+            <img src="sgv/bebe.svg" alt="alt" style="height: 2em; width: 2em" title="Menú Infantil" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_pedidos.html" title="Pedidos">
+            <img src="sgv/scroll.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="select_pages.html"
+            onclick="return confirm('¿Estás seguro de cerrar sesión?')" title="Salir">
+            <img src="sgv/salida.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
     </nav>
     <!-- BODDY-ROW -->
     <div id="container" class="container-fluid align-content-center">
@@ -58,14 +56,15 @@
                 <li>hidden</li>
             </ul>
             <div class="title text-uppercase text-center">Bebidas</div>
+            <hr>
             <ul class="m-0" style="visibility: hidden;">
                 <li>hidden</li>
             </ul>
             <div id="" class="row d-flex justify-content-around">
                 <div id="row-card" class="card col-lg-5 col-xs-12">
                     <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
+                    <div id="card-info" class="d-block card-body col-lg-12 justify-content-around">
+                        <div class="d-flex row card-text col-lg-12 col-md-12 col-xs-12">
                             <div class="col-12">
                                 <span>Descripción</span>
                             </div>
@@ -75,22 +74,33 @@
                                 <span>Descripción del producto</span>
                             </div>
                         </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
+                        <hr>
+                        <div class="d-flex row card-text col-lg-12 col-md-12 col-xs-12">
+                            <span class="col-12">Precio: $$$$$</span>
+                        </div>
+                    </div>
+                    <div class="mt-2 row-fluid d-flex justify-content-center">
+                        <div>
+                            <span class="mr-2">Cantidad: </span>
+                        </div>
+                        <!--Tamaño de la orden-->
+                        <div class="card-text">
+                            <input class="" type="number" min="1" value="1" id="input-cant"
+                                onkeyup="Solopositivos(this)" placeholder="Ingres la cantidad">
+                        </div>
+                    </div>
+                    <div class="row-fluid d-flex justify-content-center">
+                        <div class="col-6 text-center p-2">
+                            <button class="btn btn-primary col-md-10 col-xs-12">Ordenar</button>
                         </div>
                     </div>
                 </div>
-                <ul>
-                </ul>
+                <ul></ul>
+                <!--SECOND-CARD-->
                 <div id="row-card" class="card col-lg-5 col-xs-12">
                     <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
+                    <div id="card-info" class="d-block card-body col-lg-12 justify-content-around">
+                        <div class="d-flex row card-text col-lg-12">
                             <div class="col-12">
                                 <span>Descripción</span>
                             </div>
@@ -100,135 +110,45 @@
                                 <span>Descripción del producto</span>
                             </div>
                         </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
+                        <hr>
+                        <div class="d-flex row card-text col-lg-12 col-md-12 col-xs-12">
+                            <span class="col-12">Precio: $$$$$</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <ul>
-            </ul>
-            <div id="" class="row d-flex justify-content-around">
-                <div id="row-card" class="card col-lg-5 col-xs-12">
-                    <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
-                            <div class="col-12">
-                                <span>Descripción</span>
-                            </div>
-                            <ul>
-                            </ul>
-                            <div class="col-12">
-                                <span>Descripción del producto</span>
-                            </div>
+                    <div class="mt-2 row-fluid d-flex justify-content-center">
+                        <div>
+                            <span class="mr-2">Cantidad: </span>
                         </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
+                        <!--Tamaño de la orden-->
+                        <div class="card-text">
+                            <input class="" type="number" min="1" value="1" id="input-cant"
+                                onkeyup="Solopositivos(this)" placeholder="Ingres la cantidad">
                         </div>
                     </div>
-                </div>
-                <ul>
-                </ul>
-                <div id="row-card" class="card col-lg-5 col-xs-12">
-                    <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
-                            <div class="col-12">
-                                <span>Descripción</span>
-                            </div>
-                            <ul>
-                            </ul>
-                            <div class="col-12">
-                                <span>Descripción del producto</span>
-                            </div>
-                        </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul>
-            </ul>
-            <div id="" class="row d-flex justify-content-around">
-                <div id="row-card" class="card col-lg-5 col-xs-12">
-                    <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
-                            <div class="col-12">
-                                <span>Descripción</span>
-                            </div>
-                            <ul>
-                            </ul>
-                            <div class="col-12">
-                                <span>Descripción del producto</span>
-                            </div>
-                        </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul>
-                </ul>
-                <div id="row-card" class="card col-lg-5 col-xs-12">
-                    <img class="card-img-top" src="images/logo pjic.png" alt="Card image cap">
-                    <div id="card-info" class="d-flex card-body col-lg-12 justify-content-around">
-                        <div class="d-flex row card-text col-lg-6">
-                            <div class="col-12">
-                                <span>Descripción</span>
-                            </div>
-                            <ul>
-                            </ul>
-                            <div class="col-12">
-                                <span>Descripción del producto</span>
-                            </div>
-                        </div>
-                        <div class="d-flex row card-text col-lg-6 ">
-                            <div class="col-12 p-2 text-center">
-                                <span>Precio: $$$$$</span>
-                            </div>
-                            <div class="col-12 text-center p-2">
-                                <button class="btn btn-primary">Ordenar</button>
-                            </div>
+                    <div class="row-fluid d-flex justify-content-center">
+                        <div class="col-6 text-center p-2">
+                            <button class="btn btn-primary col-md-10 col-xs-12">Ordenar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <style>
         #mainNav {
             background-color: orange !important;
-        }.title{
+        }
+
+        #input-cant {
+            outline: none;
+        }
+
+        .title {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: black;
             font-weight: bold;
             font-size: 2em;
-        }
-
-        #nav_item_a:hover {
-            background-color: #d9534f;
         }
 
         #container {
@@ -262,6 +182,12 @@
         .btn:focus {
             background-color: orange !important;
             border: none;
+        }
+
+        @media(min-width: 992px) {
+            #nav_item_a:hover {
+                background-color: #f1eeee;
+            }
         }
     </style>
     <script src="vendor/jquery/jquery.min.js"></script>

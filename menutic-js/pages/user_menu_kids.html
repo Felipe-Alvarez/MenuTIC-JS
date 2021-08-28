@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Crear cuenta | MenuTIC</title>
+    <title>Menú infantil | MenuTIC</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -22,44 +22,32 @@
     <!-- SWEETALERT -->
     <link rel="stylesheet" href="css/sweetalert.css" type="text/css" />
     <script src="js/sweetalert.min.js" type="text/javascript"></script>
-    <script>
-        function Solopositivos(value) {
-            var valor = $(value).val();
-            if (!isNaN(valor) && valor >= 0) {
-                $(value).val(valor);
-            } else {
-                $(value).val(0);
-            }
-        }
-    </script>
+    <!--FUNCTIONS-->
+    <script src="js/positivos.js"></script>
 </head>
 
 <body>
     <!--NAVEGATION-NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
-        <div id="nav-alter" class="h-100 row-fluid w-100 d-flex justify-content-around col-12">
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_food.html"
-                title="Comidas">
-                <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_drink.html">
-                <img src="sgv/botella-de-plastico.svg" alt="alt" style="height: 2em; width: 2em" title="Bebidas" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_dessert.html">
-                <img src="sgv/pastel.svg" alt="alt" style="height: 2em; width: 2em" data-title="Postres" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_menu_kids.html">
-                <img src="sgv/bebe.svg" alt="alt" style="height: 2em; width: 2em" title="Menú Infantil" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="user_pedidos.html"
-                title="Pedidos">
-                <img src="sgv/scroll.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-            <a id="nav_item_a" class="text-center text-light nav-link col-lg-2" href="select_pages.html"
-                onclick="return confirm('¿Estás seguro de cerrar sesión?')" title="Salir">
-                <img src="sgv/salida.svg" alt="alt" style="height: 2em; width: 2em" />
-            </a>
-        </div>
+    <nav class="navbar navbar-expand-md sticky-bottom row-fluid d-flex justify-content-around col-12 p-0" id="mainNav">
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_food.html" title="Comidas">
+            <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_drink.html">
+            <img src="sgv/botella-de-plastico.svg" alt="alt" style="height: 2em; width: 2em" title="Bebidas" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_dessert.html">
+            <img src="sgv/pastel.svg" alt="alt" style="height: 2em; width: 2em" data-title="Postres" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2 bg-light" href="user_menu_kids.html">
+            <img src="sgv/bebe.svg" alt="alt" style="height: 2em; width: 2em" title="Menú Infantil" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_pedidos.html" title="Pedidos">
+            <img src="sgv/scroll.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="select_pages.html"
+            onclick="return confirm('¿Estás seguro de cerrar sesión?')" title="Salir">
+            <img src="sgv/salida.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
     </nav>
     <!-- BODDY-ROW -->
     <div id="container" class="container-fluid align-content-center">
@@ -68,6 +56,7 @@
                 <li>hidden</li>
             </ul>
             <div class="title text-uppercase text-center">Menú infantil</div>
+            <hr>
             <ul class="m-0" style="visibility: hidden;">
                 <li>hidden</li>
             </ul>
@@ -150,7 +139,9 @@
             background-color: orange !important;
         }
 
-        #input-cant {}
+        #input-cant:focus {
+            outline: none;
+        }
 
         .title {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -159,17 +150,13 @@
             font-size: 2em;
         }
 
-        #nav_item_a:hover {
-            background-color: #d9534f;
-        }
-
         #container {
             height: auto;
             background: #ffcc66
         }
 
         #nav-alter {
-            height: 100% !important;
+            height: 100%;
         }
 
         #container2 {
@@ -202,6 +189,12 @@
 
         #increment {
             border: 2px solid orange;
+        }
+
+        @media(min-width: 992px) {
+            #nav_item_a:hover {
+                background-color: #f1eeee;
+            }
         }
     </style>
     <script src="vendor/jquery/jquery.min.js"></script>
