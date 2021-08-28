@@ -4,5 +4,5 @@ Proyecto universitario. Versión de JavaScript.
 Integrantes:
 Felipe Álvarez Uribe y Sebastián Parra
 
-![](https://github.com/Felipe-Alvarez/MenuTIC_PPI_poli/blob/main/MENUTIC/web/images/logo%20pjic.png)
+![](https://github.com/Felipe-Alvarez/MenuTIC-JS/blob/main/menutic-js/pages/images/logo%20pjic.png)
 
