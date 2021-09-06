@@ -30,70 +30,81 @@
         }
     </script>
 </head>
-
+<!--Cuerpo de la ventana de registro-->
 <body>
+    <!-- Contenedor de los elementos principales-->
     <div id="container" class="container-fluid">
         <div id="col" class="col-12 align-content-center">
-            <!-- ROW-TITLE -->
+            <!-- Fila de la sección del título -->
             <div id="row-title" class="row align-content-start">
                 <div id="title" class="justify-content-center col-lg-12 col-sm-12 col-xs-12 justify-content-center">
                     <div id="h6" class="m-3 text-center text-uppercase text-light">Crear cuenta</div>
                 </div>
             </div>
+            <!--Botón para regresar al inicio de sesión -->
             <a class="text-dark" id="text" href="index.html"><img class="icon" src="sgv/arrow-left-short.svg"
                     alt="alt" />Regresar</a>
-            <!-- ROW-CHECK IN -->
+            <!-- Cuerpo de la fila de los campos a completar -->
             <div id="row-body" class="row">
-                <!-- SUMMIT INICIO -->
+                <!-- Sección del mensaje de completar datos -->
                 <div id="card-summit" class="col-lg-6 rounded-bottom rounded-top justify-content-center">
                     <div class="row m-4">
                         <label>Complete los espacios correctamente:</label>
                     </div>
+                    <!--Sección de ingresar los datos solicitados-->
                     <div class="row justify-content-center">
                         <div class="form-group col-lg-10" id="">
                             <div class="mt-1 mb-1" id="input_nombre">
                                 <input class="form-control" type="text" id="form-control" required=""
                                     placeholder="Nombre">
                                 <label class="form-label">Nombre del local</label>
+                                <!--Sección para ingresar el nombre del restaurante-->
                             </div>
                             <div class="mb-1" id="input_apellido">
                                 <input class="form-control" type="text" id="form-control" required=""
                                     placeholder="dirección">
                                 <label class="form-label">Dirección</label>
                             </div>
+                            <!--Sección para ingresar la dirección del restaurante-->
                             <div class="mb-1" id="input_correo">
                                 <input class="form-control" type="email" id="form-control" required=""
                                     placeholder="Correo">
                                 <label class="form-label">Correo</label>
+                                <!--Sección para ingresar el correo del restaurante-->
                             </div>
                             <div class="mb-1" id="input_correo">
                                 <input class="form-control" type="email" id="form-control" required=""
                                     placeholder="Confirmar correo">
                                 <label class="form-label">Confirmar correo</label>
+                                <!--Sección para confirmar el correo ingresado-->
                             </div>
                             <div class="mb-1" id="input_password">
                                 <input class="form-control" type="password" id="form-control" required=""
                                     placeholder="Contraseña">
                                 <label class="form-label">Contraseña</label>
+                                <!--Sección para ingresar la contraseña del restaurante-->
                             </div>
                             <div class="mb-1" id="input_password">
                                 <input class="form-control" type="password" id="form-control" required=""
                                     placeholder="Confirmar contraseña">
                                 <label class="form-label">Confirmar contraseña</label>
+                                <!--Sección para confirmar la contraseña ingresado-->
                             </div>
                         </div>
                     </div>
-                    <!-- BUTTON ZONE -->
+                    <!-- Cuerpo de los botones -->
                     <div class="row">
                         <div class="text-center col-lg-12 col-sm-12">
                             <a id="btn_regis" class="btn w-75 text-light" onclick="messageConfirm()">Crear
                                 cuenta</a>
                         </div>
+                        <!--Botón para validar el crear cuenta-->
                     </div>
                     <div class="row">
                         <div class="mt-3 col-lg-12 col-sm-12 text-center">
                             <p>¿Ya tienes una cuenta? Puedes <a href="index.html">iniciar sesión</a></p>
                         </div>
+                        <!--Hipervínculo para regresar a iniciar sesión-->
                     </div>
                 </div>
                 <!-- IMAGE-ZONE -->

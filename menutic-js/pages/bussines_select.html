@@ -1,0 +1,129 @@
+<!-- 
+    Document   : select_pages
+    Created on : 5/08/2021, 5:00:18 p. m.
+    Author     : @user
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MenuTIC</title>
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- SWEETALERT -->
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css" />
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container" class="container-fluid">
+        <div id="col" class="col-12 align-content-center">
+            <!-- ROW-LOGO -->
+            <div id="row-logo" class="row justify-content-center align-content-center">
+                <div>
+                    <img class="img-fluid" src="images/logo pjic.png" alt="Image responsive" />
+                </div>
+            </div>
+            <div class="d-flex row-fluid col-lg-12 col-md-12 col-xs-12">
+                <!-- Acá inicia la zona de los tres botones -->
+                <div class="row-fluid col-6 justify-content-center d-flex">
+                    <!-- Botón para la empresa agregar su menú -->
+                    <div id="body-button" class="col-lg-12 col-xs-12 row align-content-center justify-content-center">
+                        <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                            href="businnes_create.html" id="button-interactive">
+                            Crear menú
+                            <img class="icon" src="sgv/plus-circle.svg" alt="sgv" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row-fluid col-6 justify-content-center d-flex">
+                    <!-- Botón para la empresa actualizar su menú -->
+                    <div id="body-button" class="col-lg-12 col-xs-12 row align-content-center justify-content-center">
+                        <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                            href="bussines_update.html" id="button-interactive">
+                            Actualizar menú
+                            <img class="icon" src="sgv/pencil.svg" alt="sgv" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul></ul>
+            <!--SECCIÓN NÚMERO DOS DE BOTONES-->
+            <div class="d-flex row-fluid col-lg-12 col-md-12 col-xs-12">
+                <!-- Botón para la empresa eiminar su menú -->
+                <div class="row-fluid col-6 justify-content-center d-flex">
+                    <div id="body-button"
+                        class="col-lg-12 col-md-12 col-xs-12 row align-content-center justify-content-center">
+                        <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                            href="bussines_delete.html" id="button-interactive">
+                            Eliminar menú
+                            <img class="icon" src="sgv/delete.svg" alt="sgv" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row-fluid col-6 justify-content-center d-flex">
+                    <!-- Botón para salir -->
+                    <div id="body-button"
+                        class="col-lg-12 col-md-12 col-xs-12 row align-content-center justify-content-center">
+                        <a class="text-dark btn d-flex align-content-center justify-content-between w-75 h-75"
+                            href="index.html" id="button-interactive"
+                            onclick="return confirm('¿Estás seguro de cerrar sesión?')">
+                            Regresar
+                            <img class="icon" src="sgv/arrow-left-short.svg" alt="sgv" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*Zona de estilos CSS*/
+        #container {
+            height: 100vh;
+        }
+
+        #col {
+            height: 100%;
+        }
+
+        .icon {
+            height: 4vh;
+        }
+
+        #row-logo {
+            height: 25vh;
+        }
+
+        .btn {
+            font-family: verdana;
+            background: orange;
+            height: 7vh;
+            align-items: center;
+        }
+
+        #body-button {
+            height: 25vh;
+            width: auto;
+        }
+
+        #button-interactive:hover {
+            background-color: rgba(255, 166, 0, 0.678);
+        }
+    </style>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>

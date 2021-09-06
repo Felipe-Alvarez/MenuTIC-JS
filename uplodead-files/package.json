@@ -1,0 +1,19 @@
+{
+  "name": "wq",
+  "version": "1.0.0",
+  "description": "Proyecto institucional",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe-Alvarez/MenuTIC-JS.git"
+  },
+  "author": "Felipe Y sebastián",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipe-Alvarez/MenuTIC-JS/issues"
+  },
+  "homepage": "https://github.com/Felipe-Alvarez/MenuTIC-JS#readme"
+}

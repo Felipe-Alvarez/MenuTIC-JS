@@ -6,3 +6,4 @@ function Solopositivos(value) {
         $(value).val(0);
     }
 }
+

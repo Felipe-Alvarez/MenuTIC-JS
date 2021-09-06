@@ -1,0 +1,148 @@
+<!-- 
+    Document   : user_menu_dessert
+    Created on : 20/08/2021, 1:47:44 a. m.
+    Author     : User
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Postres | MenuTIC</title>
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- SWEETALERT -->
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css" />
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
+    <!--FUNCTIONS-->
+    <script src="js/positivos.js"></script>
+    <script src="js/work.js"></script>
+</head>
+
+<body>
+    <!--NAVEGATION-NAVBAR-->
+    <nav class="navbar navbar-expand-md sticky-top row-fluid d-flex justify-content-around col-12 p-0" id="mainNav">
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_food.html" title="Comidas">
+            <img src="sgv/menu.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_drink.html">
+            <img src="sgv/botella-de-plastico.svg" alt="alt" style="height: 2em; width: 2em" title="Bebidas" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2 bg-light" href="user_menu_dessert.html">
+            <img src="sgv/pastel.svg" alt="alt" style="height: 2em; width: 2em" data-title="Postres" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_menu_kids.html">
+            <img src="sgv/bebe.svg" alt="alt" style="height: 2em; width: 2em" title="Menú Infantil" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="user_pedidos.html" title="Pedidos">
+            <img src="sgv/scroll.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+        <a id="nav_item_a" class="text-center text-light nav-link col-2" href="select_pages.html"
+            onclick="return confirm('¿Estás seguro de cerrar sesión?')" title="Salir">
+            <img src="sgv/salida.svg" alt="alt" style="height: 2em; width: 2em" />
+        </a>
+    </nav>
+    <!-- BODDY-ROW -->
+    <div id="container" class="container-fluid align-content-center bg-light">
+        <ul></ul>
+        <div id="container2 task" class="container-fluid bg-light">
+            <span class="title">Agregar comentario</span>
+            <hr>
+            <form method="" action="">
+                <div class="row justify-content-center">
+                    <hr>
+                    <div class="form-group col-12">
+                        <!-- FORM-CONTROL-EMAIL -->
+                        <input class="form-control text-dark" id="form-control comment" name="title" type="text"
+                            placeholder="Nombre" required />
+                        <label id="lbl-placeholder" class="form-label text-dark"></label>
+                        <!-- FORM-CONTROL-PASSWORD -->
+                        <input class="form-control text-dark" id="form-control title" name="comment" type="text"
+                            placeholder="Comentario" required />
+                        <label id="lbl-placeholder" class="form-label text-dark"></label>
+                    </div>
+                </div>
+                <div class="mt-2 row">
+                    <button id="text-more" class="btn text-uppercase text-white col-12" type="submit"
+                        onclick="savetask(e)">
+                        Agregar comentario
+                    </button>
+                </div>
+            </form>
+            <div id="task">
+                <!--<iframe src="https://www.google.com/maps/embed" width="600" height="450" frameborder="0"
+                    style="border: 5 solid black" allowfullscreen></iframe>-->
+            </div>
+        </div>
+    </div>
+    <style>
+        #coment {
+            background-color: none;
+        }
+
+        #mainNav {
+            background-color: orange !important;
+        }
+
+        .title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        #container {
+            height: auto;
+
+        }
+
+        #nav-alter {
+            height: 100% !important;
+        }
+
+        #container2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*CARDS*/
+        #row-card {
+            border: solid #ff9900;
+            border-radius: 5px;
+            font-family: verdana;
+            padding: 5px;
+        }
+
+        #card-info {
+            border: solid #cccccc 1px;
+            border-radius: 5px;
+        }
+
+        .btn,
+        .btn:focus {
+            background-color: orange !important;
+            border: none;
+        }
+
+        @media(min-width: 992px) {
+            #nav_item_a:hover {
+                background-color: #f1eeee;
+            }
+        }
+    </style>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
